@@ -1,16 +1,6 @@
 def set_job_properties() {
   properties([
     [
-      $class: 'BuildDiscarderProperty',
-      strategy: [
-        $class: 'BuildRotator',
-        daysToKeep: 5,
-        numToKeep: 10,
-        artifactsDaysToKeep: 5,
-        artifactsNumToKeep: 10
-      ]
-    ],
-    [
       $class: 'org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty',
       triggers: [
         $class: 'org.jenkinsci.plugins.ghprb.GhprbTrigger',
