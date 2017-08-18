@@ -12,7 +12,7 @@ def set_job_properties() {
        	    useGitHubHooks: true,
        	    autoCloseFailedPullRequests: false,
     	    commitStatusContext: '',
-         	gitHubAuthId: '17822187-4c0e-4a23-9f46-b67c1fdca35c'
+         	gitHubAuthId: 'b3dd83ad-b4c6-4017-a15c-fe313bccb8a8'
           ]
       ])
     // pipelineTriggers([
