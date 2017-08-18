@@ -19,6 +19,7 @@ def set_job_properties() {
 		$class: 'GithubProjectProperty', 
 		displayName: '', 
 		projectUrl: 'https://github.com/shantur/test-ghprb'
+		projectUrlStr: 'https://github.com/shantur/test-ghprb'
 	]
     // pipelineTriggers([
     //   [
