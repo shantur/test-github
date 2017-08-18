@@ -6,6 +6,7 @@ def set_job_properties() {
         $class: 'org.jenkinsci.plugins.ghprb.GhprbTrigger',
         msgSuccess: 'Passed',
         msgFailure: 'Failed',
+	cron: '',
         whiteListLabels: 'build',
    	triggerPhrase: 'ReBuild',
    	useGitHubHooks: true,
