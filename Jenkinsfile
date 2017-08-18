@@ -8,6 +8,7 @@ def set_job_properties() {
             msgFailure: 'Failed',
             whiteListLabels: 'build',
        	    triggerPhrase: 'ReBuild',
+       	    onlyTriggerPhrase: true,
        	    useGitHubHooks: true,
        	    autoCloseFailedPullRequests: false,
     	    commitStatusContext: '',
