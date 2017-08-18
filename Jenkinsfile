@@ -7,6 +7,11 @@ def set_job_properties() {
         msgSuccess: 'Passed',
         msgFailure: 'Failed',
         whiteListLabels: 'build'
+   	triggerPhrase: 'ReBuild',
+   	useGitHubHooks: true,
+   	autoCloseFailedPullRequests: false,
+	commitStatusContext: '',
+     	gitHubAuthId: '17822187-4c0e-4a23-9f46-b67c1fdca35c',
       ]
     ]
     // pipelineTriggers([
