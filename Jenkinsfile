@@ -14,7 +14,12 @@ def set_job_properties() {
     	    commitStatusContext: '',
          	gitHubAuthId: 'b3dd83ad-b4c6-4017-a15c-fe313bccb8a8'
           ]
-      ])
+      ]),
+	[
+		$class: 'GithubProjectProperty', 
+		displayName: '', 
+		projectUrlStr: 'https://github.com/shantur/test-ghprb/'
+	]
     // pipelineTriggers([
     //   [
     //     $class: 'org.jenkinsci.plugins.ghprb.GhprbTrigger',
