@@ -1,19 +1,20 @@
 def set_job_properties() {
   properties([
     [
-      $class: 'org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty',
-      triggers: [
-        $class: 'org.jenkinsci.plugins.ghprb.GhprbTrigger',
-        msgSuccess: 'Passed',
-        msgFailure: 'Failed',
-	cron: '',
-        whiteListLabels: 'build',
-   	triggerPhrase: 'ReBuild',
-   	useGitHubHooks: true,
-   	autoCloseFailedPullRequests: false,
-	commitStatusContext: '',
-     	gitHubAuthId: '17822187-4c0e-4a23-9f46-b67c1fdca35c',
-      ]
+        pipelineTriggers([
+          [
+            $class: 'org.jenkinsci.plugins.ghprb.GhprbTrigger',
+            cron: '',
+            msgSuccess: 'Passed',
+            msgFailure: 'Failed',
+            whiteListLabels: 'build',
+       	    triggerPhrase: 'ReBuild',
+       	    useGitHubHooks: true,
+       	    autoCloseFailedPullRequests: false,
+    	    commitStatusContext: '',
+         	gitHubAuthId: '17822187-4c0e-4a23-9f46-b67c1fdca35c'
+          ]
+      ])
     ]
     // pipelineTriggers([
     //   [
