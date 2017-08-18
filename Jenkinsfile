@@ -1,6 +1,5 @@
 def set_job_properties() {
   properties([
-    [
         pipelineTriggers([
           [
             $class: 'org.jenkinsci.plugins.ghprb.GhprbTrigger',
@@ -15,7 +14,6 @@ def set_job_properties() {
          	gitHubAuthId: '17822187-4c0e-4a23-9f46-b67c1fdca35c'
           ]
       ])
-    ]
     // pipelineTriggers([
     //   [
     //     $class: 'org.jenkinsci.plugins.ghprb.GhprbTrigger',
